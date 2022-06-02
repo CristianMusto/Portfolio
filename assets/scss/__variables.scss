@@ -1,0 +1,28 @@
+
+//<-----MEDIA QUERIES----->
+$breakpoints: (
+    "phone": 400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet": 768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+/////////////////////////////////////////////////
+//<-----SIZES----->
+$fullHeight: calc((var(--vh, 1vh)  * 100));
+$font-base-min: 16px;
+$font-base-max: 100px;
+$breakmin: 400px;
+$breakmax: 1600px;
+/////////////////////////////////////////////////
+//<-----COLORS----->
+$black: #000000;
+$white: #ffffff;
+$blue: #0053F4;
+$red: #ff4242;
+$green: #0bb90b;
+$backg :#171717;
+/////////////////////////////////////////////////
