@@ -593,7 +593,7 @@ body {
           }
         }
         .projects-card {
-          flex: 0 0 45%;
+          width: 45%;
           background: var(--glass);
           border-radius: 16px;
           box-shadow: 0 0px 32px 10px var(--contrast-color);
@@ -606,7 +606,7 @@ body {
           flex-direction: column;
           justify-content: space-between;
           @media (max-width: 768px){
-            flex: 0 0 100%;
+            width: 75%;
             padding: 25px;
             box-shadow: 0 0px 20px 5px var(--contrast-color);
           }
