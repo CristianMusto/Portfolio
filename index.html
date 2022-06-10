@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cristian's portfolio</title>
-
+  <meta name='description' content="This is cristian musto's portfolio, he is a junior front end developer with a big passion for design.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="assets/scss/style.min.css">
+  <title>Cristian's portfolio</title>
 </head>
   <body data-theme='light'>
     <header>
@@ -17,45 +18,40 @@
               <a href='javascript: scrollToTag()'><h3>About me</h3></a>
             </li>
             <li class="menu-item">
-              <a href='#projects'><h3>Projects</h3></a>
+              <a href='javascript: scrollToKnE()'><h3>K. & E.</h3></a>
             </li>
             <li class="menu-item logo">
               <a href='javascript: scrollTop()'><h3>LOGO</h3></a>
             </li>
             <li class="menu-item">
-              <a href='#'><h3>Social</h3></a>
+              <a href='javascript: scrollToProjects()'><h3>Projects</h3></a>
             </li>
             <li class="menu-item">
-              <a href='mailto: cristian.musto00@gmail.com'><h3>Contact me</h3></a>
+              <a href='javascript: scrollToSocial()'><h3>Socials</h3></a>
             </li>
           </ul>
         </div>
         <div class="header-menu-mobile" style="display: none;">
+          <div class="hamb-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <ul class="list-menu">
             <li class="menu-item">
-              <a href='#main'>
-                <h3>About me</h3>
-              </a>
+              <a href='javascript: scrollToTag()'><h3>About me</h3></a>
             </li>
             <li class="menu-item">
-              <a href='#projects'>
-                <h3>Projects</h3>
-              </a>
+              <a href='javascript: scrollToKnE()'><h3>K. & E.</h3></a>
             </li>
             <li class="menu-item logo">
-              <a href='#'>
-                <h3>LOGO</h3>
-              </a>
+              <a href='javascript: scrollTop()'><h3>LOGO</h3></a>
             </li>
             <li class="menu-item">
-              <a href='#socials'>
-                <h3>Social</h3>
-              </a>
+              <a href='javascript: scrollToProjects()'><h3>Projects</h3></a>
             </li>
             <li class="menu-item">
-              <a href='#'>
-                <h3>Contact me</h3>
-              </a>
+              <a href='javascript: scrollToSocial()'><h3>Socials</h3></a>
             </li>
           </ul>
         </div>
@@ -104,7 +100,7 @@
 
             <div class="about-card">
               <div class="profile-pic">
-                <img src="./assets/images/profile.jpg" alt="">
+                <img src="./assets/images/profile.jpg" alt="profile-image">
               </div>
               <h2>WHO AM I?</h2>
               <p>I am a young junior front-end developer strongly interested in the design and user experience part,
@@ -134,47 +130,127 @@
               </div>
             </div>
 
+            <div class="knowledge-content" id='#knowledge'>
+              <div class="knowledge-text">
+                <h2>Knowledge & Experiences</h2>
+                </div>
+              <section class='swiper-section'>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="knowledge-card swiper-slide">
+                    <div class="profile-pic">
+                      <img src="./assets/images/profile.jpg" alt="">
+                    </div>
+                    <h2>WHO AM I?</h2>
+                    <p>I am a young junior front-end developer strongly interested in the design and user experience part,
+                      with good knowledge of the logical part of a website and a strong desire to learn everything about this fantastic job.</p>
+                      <ul class="social-icons">
+                        <li>
+                          <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">
+                            <i class="fa-brands fa-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/NightSky11">
+                            <i class="fa-brands fa-github"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/_cristian_musto_/">
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/NightSky1100">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="knowledge-card swiper-slide">
+                      <div class="profile-pic">
+                        <img src="./assets/images/profile.jpg" alt="">
+                      </div>
+                      <h2>WHO AM I?</h2>
+                      <p>I am a young junior front-end developer strongly interested in the design and user experience part,
+                        with good knowledge of the logical part of a website and a strong desire to learn everything about this fantastic job.</p>
+                        <ul class="social-icons">
+                          <li>
+                            <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">
+                              <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/NightSky11">
+                              <i class="fa-brands fa-github"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/_cristian_musto_/">
+                              <i class="fa-brands fa-instagram"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/NightSky1100">
+                              <i class="fa-brands fa-twitter"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="knowledge-card swiper-slide">
+                        <div class="profile-pic">
+                          <img src="./assets/images/profile.jpg" alt="">
+                        </div>
+                        <h2>WHO AM I?</h2>
+                        <p>I am a young junior front-end developer strongly interested in the design and user experience part,
+                          with good knowledge of the logical part of a website and a strong desire to learn everything about this fantastic job.</p>
+                          <ul class="social-icons">
+                            <li>
+                              <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">
+                                <i class="fa-brands fa-linkedin"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://github.com/NightSky11">
+                                <i class="fa-brands fa-github"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://www.instagram.com/_cristian_musto_/">
+                                <i class="fa-brands fa-instagram"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://twitter.com/NightSky1100">
+                                <i class="fa-brands fa-twitter"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </section>
+              </div>
+
             <div class="projects-content" id="projects">
               <div class="projects-title">
                 <h2 class="title">Projects</h2>
               </div>
-              <div class="projects-card">
-                <div class="profile-pic-container">
-                  <div class="projects-pic">
-                    <img src="./assets/images/profile.jpg" alt="">
-                  </div>
-                </div>
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                  optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                  obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                  nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                  tenetur error, harum nesciunt ipsum debitis quas aliquid.</p>
-                  <ul class="social-icons">
-                    <li>
-                      <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="projects-card">
+              <section class='swiper-section'>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="projects-card swiper-slide">
                   <div class="profile-pic-container">
                     <div class="projects-pic">
                       <img src="./assets/images/profile.jpg" alt="">
                     </div>
                   </div>
-                  <h2>Cristian Musto</h2>
+                  <h2>About me</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                     numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                    tenetur error, harum nesciunt ipsum debitis quas aliquid.</p>
+                    optio, eaque rerum!</p>
                     <ul class="social-icons">
                       <li>
                         <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">
@@ -184,20 +260,17 @@
                     </ul>
                   </div>
 
-                  <div class="projects-card">
+                  <div class="projects-card swiper-slide">
                     <div class="profile-pic-container">
                       <div class="projects-pic">
                         <img src="./assets/images/profile.jpg" alt="">
                       </div>
                     </div>
-                    <h2>About me</h2>
+                    <h2>Cristian Musto</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                       molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                       numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                      optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                      obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                      nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                      tenetur error, harum nesciunt ipsum debitis quas aliquid.</p>
+                      optio, eaque rerum!</p>
                       <ul class="social-icons">
                         <li>
                           <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">
@@ -207,7 +280,7 @@
                       </ul>
                     </div>
 
-                    <div class="projects-card">
+                    <div class="projects-card swiper-slide">
                       <div class="profile-pic-container">
                         <div class="projects-pic">
                           <img src="./assets/images/profile.jpg" alt="">
@@ -217,24 +290,48 @@
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                         numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                        tenetur error, harum nesciunt ipsum debitis quas aliquid.</p>
+                        optio, eaque rerum!</p>
                         <ul class="social-icons">
                           <li>
                             <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">
-                            <i class="fa-solid fa-arrow-right"></i>
+                              <i class="fa-solid fa-arrow-right"></i>
                             </a>
                           </li>
                         </ul>
                       </div>
+
+                      <div class="projects-card swiper-slide">
+                        <div class="profile-pic-container">
+                          <div class="projects-pic">
+                            <img src="./assets/images/profile.jpg" alt="">
+                          </div>
+                        </div>
+                        <h2>About me</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                          optio, eaque rerum!</p>
+                          <ul class="social-icons">
+                            <li>
+                              <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">
+                              <i class="fa-solid fa-arrow-right"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </section>
                     </div>
 
                   </div>
                 </main>
 
+                <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
                 <script src='assets/script/script.js'></script>
                 <script src="assets/script/particles.min.js"></script>
-  </body>
+
+              </body>
             </html>
