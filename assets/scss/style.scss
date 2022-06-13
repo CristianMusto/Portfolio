@@ -511,12 +511,20 @@ body {
         }
         .knowledge-text {
           width: 100%;
-          padding: 50px 0;
+          padding: 50px;
+          display: flex;
+          justify-content: space-between;
           @media (max-width: 768px){
+            display: block;
             padding: 25px 0;
           }
           h2{
             text-align: center;
+            flex: 0 0 50%;
+          }
+          p {
+            flex: 0 0 50%;
+            text-align: justify;
           }
         }
 
@@ -659,12 +667,6 @@ input {
     @media (max-width: 768px) {
       right: 10px;
       bottom: 10px;
-    }
-  }
-
-  &:hover {
-    + label {
-      outline: 2px solid black;
     }
   }
 
