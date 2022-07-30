@@ -9,10 +9,7 @@ function particles() {
             selector:
                 '.background-header'
             ,
-            maxParticles:
-                400
-            ,
-            color: '#ffffff',
+            color: "#FFFFFF",
 
             connectParticles: true,
 
@@ -23,77 +20,25 @@ function particles() {
               mode: "push"
             },
 
-            // options for breakpoints
-            responsive: [
-                {
-                    breakpoint:
-                        768
-                    ,
-                    options: {
-                        maxParticles:
-                            200
-                        ,
-                        color: '#ffffff',
-                        connectParticles: true
-                    }
-                }, {
-                    breakpoint:
-                        425
-                    ,
-                    options: {
-                        maxParticles:
-                            100
-                        ,
-                        color: '#ffffff',
-                        connectParticles: true
-                    }
-                },
-            ]
+            maxParticles: 200
         });
   } else{
     Particles.
         init
         ({
 
-            // normal options
             selector:
                 '.background-header'
             ,
             maxParticles:
-                400
+                200
             ,
-            color: '#000000',
+            color: "#FFFFFF",
 
             connectParticles: true,
 
             retina_detect: true,
 
-            // options for breakpoints
-            responsive: [
-                {
-                    breakpoint:
-                        768
-                    ,
-                    options: {
-                        maxParticles:
-                            200
-                        ,
-                        color: '#000000',
-                        connectParticles: true
-                    }
-                }, {
-                    breakpoint:
-                        425
-                    ,
-                    options: {
-                        maxParticles:
-                            100
-                        ,
-                        color: '#000000',
-                        connectParticles: true
-                    }
-                },
-            ]
         });
   }
 }
@@ -115,9 +60,9 @@ window.onload = function () {
           centeredSlides: true,
           slidesPerView: "auto",
           autoplay: {
-          delay: 3000,
-          disableOnInteraction: true,
-        },
+            delay: 3000,
+           disableOnInteraction: true,
+          },
           coverflowEffect: {
             rotate: 0,
             stretch: 0,
