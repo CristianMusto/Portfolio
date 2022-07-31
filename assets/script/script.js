@@ -44,13 +44,13 @@ function particles() {
 }
 
 window.onload = function () {
-  setLocalTheme();
   const theme = localStorage.getItem('theme');
+  setLocalTheme()
   if (theme == 'dark') {
     document.querySelector('#switch').checked = true;
     document.querySelector('body').setAttribute('data-theme', 'dark');
     particles();
-  } else if (theme == 'light' || theme == '') {
+  } else if (theme == 'light' || theme == 'undefined') {
     document.querySelector('body').setAttribute('data-theme', 'light');
     document.querySelector('#switch').checked = false;
     particles();
