@@ -45,7 +45,6 @@ function particles() {
 
 window.onload = function () {
   const theme = localStorage.getItem('theme');
-  setLocalTheme()
   if (theme == 'dark') {
     document.querySelector('#switch').checked = true;
     document.querySelector('body').setAttribute('data-theme', 'dark');
