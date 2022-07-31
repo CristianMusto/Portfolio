@@ -9,7 +9,7 @@ function particles() {
             selector:
                 '.background-header'
             ,
-            color: "#FFFFFF",
+            color: "#000000",
 
             connectParticles: true,
 

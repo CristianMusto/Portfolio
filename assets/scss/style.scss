@@ -6,7 +6,8 @@ body[data-theme='light']{
   --primary-color: #fff;
   --contrast-color: #000000;
   --bg: #fffff;
-  --glass: rgba(250, 250, 250, 0.5)
+  --glass: rgba(0, 0, 0, 0.5);
+  --bgBody: linear-gradient(180deg, rgba(0, 239, 255, 1) 0%, rgba(0, 161, 255, 1) 10%, rgba(42, 1, 255, 1) 20%, rgba(143, 0, 255, 1) 30%, rgba(255, 109, 21, 1) 40%, rgba(255, 0, 0, 1) 50%, rgba(143, 0, 255, 1) 60%, rgba(42, 1, 255, 1) 70%, rgba(0, 161, 255, 1) 80%, rgba(0, 239, 255, 1) 90%);
   transition: all 500ms linear;
 }
 
@@ -14,7 +15,8 @@ body[data-theme='dark']{
   --primary-color: #000000;
   --contrast-color: #fff;
   --bg: #171717;
-  --glass: rgba(0, 0, 0, 0.5)
+  --glass: rgba(255, 255, 255, 0.5);
+  --bgBody: linear-gradient(180deg, rgba(255, 109, 21, 1) 0%, rgba(255, 0, 0, 1) 10%, rgba(143, 0, 255, 1) 20%, rgba(42, 1, 255, 1) 30%, rgba(0, 161, 255, 1) 40%, rgba(0, 239, 255, 1) 50%, rgba(0, 161, 255, 1) 60%, rgba(42, 1, 255, 1) 70%, rgba(143, 0, 255, 1) 80%, rgba(255, 0, 0, 1) 90%, rgba(255, 109, 21, 1) 100%);
   transition: all 500ms linear;
 }
 
@@ -106,6 +108,23 @@ html, body {
 }
 
 body {
+    background: var(--bgBody);
+    background-size: 100% 200%;
+    animation: gradient-animation 60s linear infinite;
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 0% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
 
     header{
       @include position(relative, top);
@@ -379,7 +398,7 @@ body {
         }
       }
       .background-header {
-        background: linear-gradient(180deg, rgba(0, 239, 255, 1) 0%, rgba(0, 161, 255, 1) 62%, rgba(42, 1, 255, 1) 100%);;
+        //background: linear-gradient(180deg, rgba(0, 239, 255, 1) 0%, rgba(0, 161, 255, 1) 62%, rgba(42, 1, 255, 1) 100%);;
         position: absolute;
         top: 0;
         left: 0;
@@ -393,7 +412,7 @@ body {
       top: 0;
       width: 100%;
       .about-content {
-        background: linear-gradient(180deg, rgba(42, 1, 255, 1) 0%, rgba(143, 0, 255, 1) 75%, rgba(255, 109, 21, 1) 100%);
+        //background: linear-gradient(180deg, rgba(42, 1, 255, 1) 0%, rgba(143, 0, 255, 1) 75%, rgba(255, 109, 21, 1) 100%);
         width: 100%;
         color: var(--primary-color);
         display: flex;
@@ -468,7 +487,7 @@ body {
       }
 
       .knowledge-content {
-        background: linear-gradient(180deg, rgba(255, 109, 21, 1) 0%, rgba(255, 0, 0, 1) 75%, rgba(143, 0, 255, 1) 100%);
+        //background: linear-gradient(180deg, rgba(255, 109, 21, 1) 0%, rgba(255, 0, 0, 1) 75%, rgba(143, 0, 255, 1) 100%);
         width: 100%;
         color: var(--primary-color);
         scroll-margin: 50px;
@@ -543,7 +562,7 @@ body {
       }
 
       .projects-content {
-        background: linear-gradient(180deg, rgba(143, 0, 255, 1) 0%, rgba(42, 1, 255, 1) 75%, rgba(0, 161, 255, 1) 100%);
+        //background: linear-gradient(180deg, rgba(143, 0, 255, 1) 0%, rgba(42, 1, 255, 1) 75%, rgba(0, 161, 255, 1) 100%);
         width: 100%;
         color: var(--primary-color);
         display: flex;
@@ -810,7 +829,7 @@ input:checked {
 
 footer {
   .container {
-    background: linear-gradient(180deg, rgba(0, 161, 255, 1) 0%, rgba(0, 239, 255, 1) 100%);
+    //background: linear-gradient(180deg, rgba(0, 161, 255, 1) 0%, rgba(0, 239, 255, 1) 100%);
     text-align: center;
     padding: 50px 150px 0px 150px;
     border-bottom: 1px solid var(--contrast-color);
