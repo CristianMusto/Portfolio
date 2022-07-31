@@ -53,6 +53,8 @@ window.onload = function () {
     document.querySelector('body').setAttribute('data-theme', 'light');
     document.querySelector('#switch').checked = false;
     particles();
+  } else {
+    particles();
   }
   var swiper = new Swiper(".swiper-container", {
           effect: "coverflow",

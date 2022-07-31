@@ -110,7 +110,7 @@ html, body {
 body {
     background: var(--bgBody);
     background-size: 100% 200%;
-    animation: gradient-animation 60s linear infinite;
+    animation: gradient-animation 120s linear infinite;
 
     @keyframes gradient-animation {
       0% {
