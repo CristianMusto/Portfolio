@@ -44,15 +44,21 @@ function particles() {
 }
 
 window.onload = function () {
-  switchTheme();
   const theme = localStorage.getItem('theme');
   if (theme == 'dark') {
     document.querySelector('#switch').checked = true;
     document.querySelector('body').setAttribute('data-theme', 'dark');
+    setLocalTheme('dark')
     particles();
   } else if (theme == 'light') {
     document.querySelector('body').setAttribute('data-theme', 'light');
     document.querySelector('#switch').checked = false;
+    setLocalTheme('light')
+    particles();
+  } else {
+    document.querySelector('body').setAttribute('data-theme', 'light');
+    document.querySelector('#switch').checked = false;
+    setLocalTheme('light')
     particles();
   }
   var swiper = new Swiper(".swiper-container", {
