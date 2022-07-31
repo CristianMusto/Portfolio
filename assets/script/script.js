@@ -50,7 +50,11 @@ window.onload = function () {
     document.querySelector('#switch').checked = true;
     document.querySelector('body').setAttribute('data-theme', 'dark');
     particles();
-  } else if (theme == 'light' || theme == 'undefined') {
+  } else if (theme == 'light') {
+    document.querySelector('body').setAttribute('data-theme', 'light');
+    document.querySelector('#switch').checked = false;
+    particles();
+  } else {
     document.querySelector('body').setAttribute('data-theme', 'light');
     document.querySelector('#switch').checked = false;
     particles();
