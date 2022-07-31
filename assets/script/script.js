@@ -44,16 +44,15 @@ function particles() {
 }
 
 window.onload = function () {
+  setLocalTheme();
   const theme = localStorage.getItem('theme');
   if (theme == 'dark') {
     document.querySelector('#switch').checked = true;
     document.querySelector('body').setAttribute('data-theme', 'dark');
     particles();
-  } else if (theme == 'light') {
+  } else if (theme == 'light' || theme == '') {
     document.querySelector('body').setAttribute('data-theme', 'light');
     document.querySelector('#switch').checked = false;
-    particles();
-  } else {
     particles();
   }
   var swiper = new Swiper(".swiper-container", {
