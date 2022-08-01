@@ -24,10 +24,15 @@ body[data-theme='dark']{
   box-sizing: border-box;
 }
 
+.mobile-menu-open {
+  overflow-y: hidden;
+}
+
 html, body {
   @include reset(everything);
   scroll-behavior: smooth;
   overflow-x: hidden;
+
   ul {
     @include reset(list);
   }
@@ -174,9 +179,9 @@ body {
           z-index: 9998;
           @include size(100%, 100px);
           .hamb-menu {
-            transition: all .4s ease-in-out;
-            background-color: var(--contrast-color);
-            border: 2px solid var(--contrast-color);
+            transition: all .5s ease-in-out;
+            background-color: var(--primary-color);
+            border: 2px solid var(--primary-color);
             border-radius: 50px;
             width: 15%;
             padding: 30px;
@@ -190,7 +195,7 @@ body {
               width: 30px;
               height: 2px;
               border-radius: 9999px;
-              background-color: var(--primary-color);
+              background-color: var(--contrast-color);
               transition: all .4s ease-in-out;
               position: absolute;
               top: 50%;
@@ -340,7 +345,7 @@ body {
     }
 
     .arrow-down {
-      color: var(--primary-color);
+      color: var(--contrast-color);
       @include position(absolute, bottom left);
       bottom: 0;
       left: 50%;
@@ -359,12 +364,12 @@ body {
           @include justify-content(space-evenly);
           @include align-items(center);
           margin: 0 50px;
-          background-color: var(--contrast-color);
+          background-color: var(--primary-color);
           border: 1px solid var(--primary-color);
           border-radius: 50px;
           pointer-events: auto;
           display: flex;
-          color: var(--primary-color);
+          color: var(--contrast-color);
           animation-iteration-count: 2;
           animation-duration: 500ms;
           animation-name: bounce2;
@@ -377,18 +382,18 @@ body {
           }
 
           &:hover {
-            box-shadow: 0 0px 32px 0 var(--contrast-color);
+            box-shadow: 0 0px 32px 0 var(--primary-color);
             animation: bounce2 750ms linear;
-            border-color: var(--contrast-color);
-            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            background-color: var(--contrast-color);
 
             i, h3{
-              color: var(--contrast-color);
+              color: var(--primary-color);
               @include fluid-type(14, 16, 250, 768);
             }
           }
           i {
-            color: var(--primary-color);
+            color: var(--contrast-color);
             padding: 20px;
           }
         }
@@ -518,7 +523,7 @@ body {
           justify-content: space-between;
           @media (max-width: 768px){
             display: block;
-            padding: 25px 0;
+            padding: 25px 50px;
           }
           h2{
             text-align: center;
@@ -544,7 +549,7 @@ body {
           justify-content: space-between;
           @media (max-width: 768px){
             padding: 0 25px;
-            box-shadow: 0 0px 20px 5px var(--contrasprimary-color);
+            box-shadow: 0 0px 20px 5px var(--primary-color);
           }
           h2{
             text-align: center;
