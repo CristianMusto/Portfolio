@@ -102,6 +102,19 @@ window.onload = function () {
     })
   })
 
+  async function fetchCardsProjects(url) {
+    const res = await fetch(url);
+    return await res.json();
+  }
+
+  wrapper = document.querySelector("#pj-wrapper");
+
+  fetchCardsKE('https://cristianmusto.github.io/Portfolio/assets/json/cardsProjects.json').then(res => {
+    res.forEach(el => {
+      wrapper.innerHTML += "<div class='projects-card swiper-slide' style='box-shadow: 0 0px 20px 10px "+el.shadow+";'><div class='profile-pic'><img src=" + el.logo + "></div><h2>" + el.title + "</h2><p>" + el.description + "</p></div>"
+    })
+  })
+
   const theme = localStorage.getItem('theme');
   if (theme == 'dark') {
     document.querySelector('#switch').checked = true;
