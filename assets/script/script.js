@@ -107,11 +107,12 @@ window.onload = function () {
     return await res.json();
   }
 
-  wrapper = document.querySelector("#pj-wrapper");
+  wrapperP = document.querySelector("#pj-wrapper");
+  
 
-  fetchCardsKE('https://cristianmusto.github.io/Portfolio/assets/json/cardProjects.json').then(res => {
+  fetchCardsProjects('https://cristianmusto.github.io/Portfolio/assets/json/cardsProjects.json').then(res => {
     res.forEach(el => {
-      wrapper.innerHTML += "<div class='projects-card swiper-slide' style='box-shadow: 0 0px 20px 10px "+el.shadow+";'><div class='profile-pic'><img src=" + el.logo + "></div><h2>" + el.title + "</h2><p>" + el.description + "</p></div>"
+      wrapperP.innerHTML += "<div class='projects-card swiper-slide' style='box-shadow: 0 0px 20px 10px "+el.shadow+";'><div class='profile-pic'><img src=" + el.logo + "></div><h2>" + el.title + "</h2><p>" + el.description + "</p></div>"
     })
   })
 

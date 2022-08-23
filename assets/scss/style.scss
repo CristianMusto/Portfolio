@@ -648,22 +648,6 @@ body {
         @media(max-width: 768px) {
           scroll-margin: 25px;
         }
-        .projects-pic {
-          clip-path: circle(50%);
-          width: 40%;
-          margin: 25px auto;
-          position:relative;
-          top: 0;
-          height: 0;
-          padding-bottom: 40%;
-          img {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
         .projects-title {
           width: 100%;
           padding: 50px 0;
