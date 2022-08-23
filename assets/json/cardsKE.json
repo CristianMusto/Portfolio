@@ -1,0 +1,51 @@
+[
+    {
+        "title" : "HTML",
+        "description" : "",
+        "logo" : "./assets/images/html-logo.jpg",
+        "shadow": "#F16327"
+    },
+
+    {
+        "title": "CSS",
+        "description": "",
+        "logo": "./assets/images/css-logo.jpg",
+        "shadow": "#18A1DD"
+    },
+
+
+    {
+        "title": "SASS",
+        "description": "",
+        "logo": "./assets/images/sass-logo.jpg",
+        "shadow": "#CD6698"
+    },
+
+    {
+        "title": "JAVASCRIPT",
+        "description": "",
+        "logo": "./assets/images/javascript-logo.png",
+        "shadow": "#F1DD4E"
+    },
+
+    {
+        "title": "JQUERY",
+        "description": "",
+        "logo": "./assets/images/jquery-logo.jpg",
+        "shadow": "#3558A8"
+    },
+
+    {
+        "title": "ANGULAR",
+        "description": "",
+        "logo": "./assets/images/angular-logo.jpg",
+        "shadow": "#2371D0"
+    },
+
+    {
+        "title": "PHP",
+        "description": "",
+        "logo": "./assets/images/php-logo-hd.jpg",
+        "shadow": "#5F82BA"
+    }
+]

@@ -20,7 +20,7 @@ function particles() {
               mode: "push"
             },
 
-            maxParticles: 200,
+            maxParticles: 75,
 
             responsive: [
               {
@@ -29,7 +29,7 @@ function particles() {
                 ,
                 options: {
                   maxParticles:
-                    100
+                    25
                 }
               },
             ]
@@ -42,9 +42,6 @@ function particles() {
             selector:
                 '.background-header'
             ,
-            maxParticles:
-                200
-            ,
             color: "#FFFFFF",
 
             connectParticles: true,
@@ -56,7 +53,7 @@ function particles() {
               mode: "push"
             },
 
-            maxParticles: 200,
+            maxParticles: 75,
 
             responsive: [
               {
@@ -65,7 +62,7 @@ function particles() {
                 ,
                 options: {
                   maxParticles:
-                    100
+                    25
                 }
               },
             ]
@@ -75,6 +72,20 @@ function particles() {
 }
 
 window.onload = function () {
+
+  async function fetchCardsKE(url) {
+    const res = await fetch(url);
+    return await res.json();
+  }
+
+  wrapper = document.querySelector("#ke-wrapper");
+
+  fetchCardsKE('../../assets/json/cardsKE.json').then(res => {
+    res.forEach(el => {
+      wrapper.innerHTML += "<div class='knowledge-card swiper-slide' style='box-shadow: 0 0px 20px 10px "+el.shadow+";'><div class='profile-pic'><img src=" + el.logo + "></div><h2>" + el.title + "</h2><p>" + el.description + "</p></div>"
+    })
+  })
+
   const theme = localStorage.getItem('theme');
   if (theme == 'dark') {
     document.querySelector('#switch').checked = true;
@@ -108,12 +119,13 @@ window.onload = function () {
             modifier: 2,
             slideShadows: true,
           },
-          loop: true,
+          loop: false,
           pagination: {
           el: ".swiper-pagination",
           dynamicBullets: true,
         },
   });
+
   scrollTop();
 };
 

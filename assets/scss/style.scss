@@ -6,7 +6,7 @@ body[data-theme='light']{
   --primary-color: #fff;
   --contrast-color: #000000;
   --bg: #fffff;
-  --glass: rgba(0, 0, 0, 0.5);
+  --glass: rgba(255, 255, 255, 0.5);
   --bgBody: linear-gradient(180deg, rgba(0, 239, 255, 1) 0%, rgba(0, 161, 255, 1) 10%, rgba(42, 1, 255, 1) 20%, rgba(143, 0, 255, 1) 30%, rgba(255, 109, 21, 1) 40%, rgba(255, 0, 0, 1) 50%, rgba(143, 0, 255, 1) 60%, rgba(42, 1, 255, 1) 70%, rgba(0, 161, 255, 1) 80%, rgba(0, 239, 255, 1) 90%);
   transition: all 500ms linear;
 }
@@ -15,7 +15,7 @@ body[data-theme='dark']{
   --primary-color: #000000;
   --contrast-color: #fff;
   --bg: #171717;
-  --glass: rgba(255, 255, 255, 0.5);
+  --glass: rgba(0, 0, 0, 0.5);
   --bgBody: linear-gradient(180deg, rgba(255, 109, 21, 1) 0%, rgba(255, 0, 0, 1) 10%, rgba(143, 0, 255, 1) 20%, rgba(42, 1, 255, 1) 30%, rgba(0, 161, 255, 1) 40%, rgba(0, 239, 255, 1) 50%, rgba(0, 161, 255, 1) 60%, rgba(42, 1, 255, 1) 70%, rgba(143, 0, 255, 1) 80%, rgba(255, 0, 0, 1) 90%, rgba(255, 109, 21, 1) 100%);
   transition: all 500ms linear;
 }
@@ -71,7 +71,7 @@ html, body {
       a{
         display: inline-block;
         i{
-          color: var(--contrast-color);
+          color: var(--primary-color);
           position: absolute;
           top: 16px;
           left: 16px;
@@ -89,7 +89,7 @@ html, body {
         height: 50px;
         border-radius: 100%;
         display: block;
-        background: var(--primary-color);
+        background: var(--contrast-color);
         transition: all 250ms ease-out;
         @media (max-width: 768px){
           width: 35px;
@@ -102,8 +102,8 @@ html, body {
       }
       a:hover i {
         transform: scale(2);
-        color: var(--primary-color);
-        background: var(--primary-color);
+        color: var(--contrast-color);
+        background: var(--contrast-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all 250ms ease-in;
@@ -238,7 +238,6 @@ body {
               background-color: var(--primary-color);
               border: 2px solid var(--primary-color);
               pointer-events: none;
-              width: 80%;
               position: absolute;
               top: -20px;
               left: 0;
@@ -263,6 +262,8 @@ body {
             position: absolute;
             top: 0;
             left: -1000px;
+            width: 100%;
+            height: $fullHeight;
             transition: all 500ms linear;
           }
         }
@@ -275,7 +276,7 @@ body {
     width: 100%;
 
     h1{
-      @include fluid-type(50, 100, 300, 1920);
+      @include fluid-type(40, 100, 300, 1920);
       color: var(--primary-color);
       position: absolute;
       top: 45%;
@@ -419,11 +420,12 @@ body {
       .about-content {
         //background: linear-gradient(180deg, rgba(42, 1, 255, 1) 0%, rgba(143, 0, 255, 1) 75%, rgba(255, 109, 21, 1) 100%);
         width: 100%;
-        color: var(--primary-color);
+        color: var(--contrast-color);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 100px 150px;
+        margin-top: 100px;
         @media (max-width: 768px){
           display: block;
           padding: 0 50px;
@@ -463,7 +465,7 @@ body {
           flex: 0 0 45%;
           background: var(--glass);
           border-radius: 16px;
-          box-shadow: 0 0px 32px 10px var(--primary-color);
+          box-shadow: 0 0px 32px 10px var(--contrast-color);
           backdrop-filter: blur(5px);
           -webkit-backdrop-filter: blur(5px);
           border: 1px solid rgba(255, 255, 255, 0.3);
@@ -494,7 +496,7 @@ body {
       .knowledge-content {
         //background: linear-gradient(180deg, rgba(255, 109, 21, 1) 0%, rgba(255, 0, 0, 1) 75%, rgba(143, 0, 255, 1) 100%);
         width: 100%;
-        color: var(--primary-color);
+        color: var(--contrast-color);
         scroll-margin: 50px;
         @media(max-width: 768px) {
           scroll-margin: 25px;
@@ -538,7 +540,6 @@ body {
         .knowledge-card {
           background: var(--glass);
           border-radius: 16px;
-          box-shadow: 0 0px 32px 10px var(--primary-color);
           backdrop-filter: blur(5px);
           -webkit-backdrop-filter: blur(5px);
           border: 1px solid rgba(255, 255, 255, 0.3);
@@ -549,7 +550,6 @@ body {
           justify-content: space-between;
           @media (max-width: 768px){
             padding: 0 25px;
-            box-shadow: 0 0px 20px 5px var(--primary-color);
           }
           h2{
             text-align: center;
@@ -569,7 +569,7 @@ body {
       .projects-content {
         //background: linear-gradient(180deg, rgba(143, 0, 255, 1) 0%, rgba(42, 1, 255, 1) 75%, rgba(0, 161, 255, 1) 100%);
         width: 100%;
-        color: var(--primary-color);
+        color: var(--contrast-color);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -670,6 +670,7 @@ input {
     @media (max-width: 768px) {
       right: 10px;
       bottom: 10px;
+      transform: scale(1.5);
     }
   }
 
@@ -689,6 +690,10 @@ label {
   --w: 5vw;
   --h: calc(var(--w) / 2);
   --br: calc(var(--w) / 1);
+
+  @media (max-width: 768px) {
+    --w: 8vw;
+  }
 
   position: relative;
   background: white;
@@ -911,7 +916,7 @@ footer {
     }
     .credits {
       p{
-        color: var(--contrast-color);
+        color: var(--primary-color);
         text-align: center;
         margin-top: 100px;
       }
