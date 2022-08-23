@@ -187,7 +187,7 @@ body {
             padding: 30px;
             margin-top: 20px;
             margin-left: 20px;
-            position: relative;
+            position: fixed;
             top: 0;
             z-index: 9999;
             span {
@@ -786,6 +786,14 @@ input:checked {
           }
         }
       }
+    }
+    .hamb-menu {
+      transform: scale(0.6);
+      left: -2%;
+      top: -1% !important;
+      margin-left: 0 !important;
+      margin-top: 0 !important;
+      transition: all 500ms linear;
     }
   }
 }
