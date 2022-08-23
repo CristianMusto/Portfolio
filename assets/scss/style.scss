@@ -260,7 +260,6 @@ body {
             position: fixed;
             top: 0;
             z-index: 9999;
-            
             span {
               display: block;
               width: 30px;
@@ -317,6 +316,65 @@ body {
               transition: all 500ms linear;
               a{
                 color: var(--contrast-color);
+                .logo-mobile {
+                    position: relative;
+                    left: 50%;
+                    width: 100%;
+                    top: -8%;
+                    text-align: center;
+                    transform: translateX(-50%);
+                    font-family: 'Pacifico', cursive;
+                
+                    @keyframes noise-anim {
+                      $steps: 20;
+                
+                      @for $i from 0 through $steps {
+                        #{percentage($i*(1/$steps))} {
+                          clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+                        }
+                      }
+                    }
+                
+                    &:after {
+                      content: attr(data-text);
+                      text-align: center;
+                      width: 100%;
+                      position: absolute;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      text-shadow: -2px 0 var(--contrast-color);
+                      top: 0;
+                      color: var(--contrast-color);
+                      overflow: hidden;
+                      clip: rect(0, 900px, 0, 0);
+                      animation: noise-anim 2s infinite linear alternate-reverse;
+                    }
+                
+                    @keyframes noise-anim-2 {
+                      $steps: 20;
+                
+                      @for $i from 0 through $steps {
+                        #{percentage($i*(1/$steps))} {
+                          clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+                        }
+                      }
+                    }
+                
+                    &:before {
+                      content: attr(data-text);
+                      text-align: center;
+                      width: 100%;
+                      position: absolute;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      text-shadow: 2px 0 var(--contrast-color);
+                      top: 0;
+                      color: var(--contrast-color);
+                      overflow: hidden;
+                      clip: rect(0, 900px, 0, 0);
+                      animation: noise-anim-2 3s infinite linear alternate-reverse;
+                    }
+                  }
               }
               @media (max-width: 800px){
                 margin-top: 20px;
