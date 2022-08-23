@@ -116,6 +116,8 @@ window.onload = function () {
     })
   })
 
+  
+
   const theme = localStorage.getItem('theme');
   if (theme == 'dark') {
     document.querySelector('#switch').checked = true;
