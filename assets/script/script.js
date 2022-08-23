@@ -96,7 +96,7 @@ window.onload = function () {
 
   wrapper = document.querySelector("#ke-wrapper");
 
-  fetchCardsKE('../../assets/json/cardsKE.json').then(res => {
+  fetchCardsKE('https://raw.githubusercontent.com/CristianMusto/Portfolio/main/cardsKE.json').then(res => {
     res.forEach(el => {
       wrapper.innerHTML += "<div class='knowledge-card swiper-slide' style='box-shadow: 0 0px 20px 10px "+el.shadow+";'><div class='profile-pic'><img src=" + el.logo + "></div><h2>" + el.title + "</h2><p>" + el.description + "</p></div>"
     })
