@@ -3,6 +3,7 @@
         "title" : "Project",
         "description" : "",
         "logo" : "./assets/images/profile.jpg",
+        "link": "",
         "shadow": "#000"
     }
 ]
