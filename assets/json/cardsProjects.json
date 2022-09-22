@@ -56,7 +56,7 @@
         "credits": "credits: Nss magazine, Brownie"
     },
     {
-        "title" : "Gucci",
+        "title" : "When the time stand still",
         "description" : "created with the use of: html, sass, js, gsap and company's cms. I learnt how to use gsap in a project.",
         "logo" : "./assets/images/projects/gucci.jpeg",
         "link": "https://www.nssmag.com/it/gucci",
@@ -70,5 +70,5 @@
         "link": "https://www.nssgclub.com/it/sirene",
         "shadow": "#D67994",
         "credits": "credits: Nss g-club, Brownie"
-    },
+    }
 ]
