@@ -589,6 +589,23 @@ body {
             display: block;
             margin: 0 auto;
           }
+
+          .epicode {
+            a {
+              background-color: var(--primary-color);
+              color: var(--contrast-color);
+              border-radius: 50px;
+              padding: 15px 50px;
+              @include fluid-type(16, 25, 300, 1920);
+            }
+
+            a:hover {
+              box-shadow: 0 0px 32px 0 var(--contrast-color);
+              border-color: var(--contrast-color);
+              background-color: var(--contrast-color);
+              color: var(--primary-color);
+            }
+          }
         }
         .about-card {
           flex: 0 0 45%;

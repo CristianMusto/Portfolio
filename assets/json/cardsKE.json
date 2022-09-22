@@ -1,14 +1,14 @@
 [
     {
         "title" : "HTML",
-        "description" : "",
+        "description" : "self-taught, improved in epicode and nss",
         "logo" : "./assets/images/logos/html-logo.jpg",
         "shadow": "#F16327"
     },
 
     {
         "title": "CSS",
-        "description": "",
+        "description": "self-taught, improved in epicode and nss",
         "logo": "./assets/images/logos/css-logo.jpg",
         "shadow": "#18A1DD"
     },
@@ -16,35 +16,35 @@
 
     {
         "title": "SASS",
-        "description": "",
+        "description": "learned in epicode and improved in nss",
         "logo": "./assets/images/logos/sass-logo.jpg",
         "shadow": "#CD6698"
     },
 
     {
         "title": "JAVASCRIPT",
-        "description": "",
+        "description": "self-taught, improved in epicode and nss",
         "logo": "./assets/images/logos/javascript-logo.png",
         "shadow": "#F1DD4E"
     },
 
     {
         "title": "JQUERY",
-        "description": "",
+        "description": "learned in epicode and improved in nss",
         "logo": "./assets/images/logos/jquery-logo.jpg",
         "shadow": "#3558A8"
     },
 
     {
         "title": "ANGULAR",
-        "description": "",
+        "description": "learned in epicode",
         "logo": "./assets/images/logos/angular-logo.jpg",
         "shadow": "#2371D0"
     },
 
     {
         "title": "PHP",
-        "description": "",
+        "description": "learned in nss",
         "logo": "./assets/images/logos/php-logo-hd.jpg",
         "shadow": "#5F82BA"
     }
