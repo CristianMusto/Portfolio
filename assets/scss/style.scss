@@ -558,6 +558,9 @@ body {
           display: block;
           padding: 0 50px;
         }
+        @media (max-width: 1024px) {
+          padding: 0 25px;
+        }
         .profile-pic {
           clip-path: circle(50%);
           width: 50%;

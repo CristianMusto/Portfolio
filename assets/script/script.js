@@ -75,7 +75,7 @@ window.onload = function () {
 
   AOS.init();
 
-  if ($(window).outerWidth() > 768) {
+  if ($(window).outerWidth() > 900) {
     $('.header-menu').css({
       'display': 'block'
     })
@@ -224,7 +224,7 @@ function scrollToAnyTag(tag) {
   if (tag == document.querySelector("#main")) {
     body.classList.add('reachedMain')
     element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    if ($(window).outerWidth() < 768) {
+    if ($(window).outerWidth() < 900) {
       hambMenu.classList.remove('active');
       headerMobile.classList.remove('active');
       body.classList.remove('mobile-menu-open');
@@ -232,7 +232,7 @@ function scrollToAnyTag(tag) {
     }
   } else {
     element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    if ($(window).outerWidth() < 768) {
+    if ($(window).outerWidth() < 900) {
       hambMenu.classList.remove('active');
       headerMobile.classList.remove('active');
       body.classList.remove('mobile-menu-open');
