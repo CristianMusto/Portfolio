@@ -6,7 +6,7 @@ body[data-theme='light']{
   --primary-color: #fff;
   --contrast-color: #000000;
   --bg: #fffff;
-  --glass: rgba(255, 255, 255, 0.5);
+  --glass: rgba(0, 0, 0, 0.5);
   --bgBody: linear-gradient(180deg, rgba(0, 239, 255, 1) 0%, rgba(0, 161, 255, 1) 10%, rgba(42, 1, 255, 1) 20%, rgba(143, 0, 255, 1) 30%, rgba(255, 109, 21, 1) 40%, rgba(255, 0, 0, 1) 50%, rgba(143, 0, 255, 1) 60%, rgba(42, 1, 255, 1) 70%, rgba(0, 161, 255, 1) 80%, rgba(0, 239, 255, 1) 90%);
   transition: all 500ms linear;
 }
@@ -15,7 +15,7 @@ body[data-theme='dark']{
   --primary-color: #000000;
   --contrast-color: #fff;
   --bg: #171717;
-  --glass: rgba(0, 0, 0, 0.5);
+  --glass: rgba(255, 255, 255, 0.5);
   --bgBody: linear-gradient(180deg, rgba(255, 109, 21, 1) 0%, rgba(255, 0, 0, 1) 10%, rgba(143, 0, 255, 1) 20%, rgba(42, 1, 255, 1) 30%, rgba(0, 161, 255, 1) 40%, rgba(0, 239, 255, 1) 50%, rgba(0, 161, 255, 1) 60%, rgba(42, 1, 255, 1) 70%, rgba(143, 0, 255, 1) 80%, rgba(255, 0, 0, 1) 90%, rgba(255, 109, 21, 1) 100%);
   transition: all 500ms linear;
 }
@@ -71,7 +71,7 @@ html, body {
       a{
         display: inline-block;
         i{
-          color: var(--primary-color);
+          color: var(--contrast-color);
           position: absolute;
           top: 16px;
           left: 16px;
@@ -89,7 +89,7 @@ html, body {
         height: 50px;
         border-radius: 100%;
         display: block;
-        background: var(--contrast-color);
+        background: var(--primary-color);
         transition: all 250ms ease-out;
         @media (max-width: 768px){
           width: 35px;
@@ -102,8 +102,8 @@ html, body {
       }
       a:hover i {
         transform: scale(2);
-        color: var(--contrast-color);
-        background: var(--contrast-color);
+        color: var(--primary-color);
+        background: var(--primary-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all 250ms ease-in;
@@ -548,9 +548,8 @@ body {
       top: 0;
       width: 100%;
       .about-content {
-        //background: linear-gradient(180deg, rgba(42, 1, 255, 1) 0%, rgba(143, 0, 255, 1) 75%, rgba(255, 109, 21, 1) 100%);
         width: 100%;
-        color: var(--contrast-color);
+        color: var(--primary-color);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -595,7 +594,7 @@ body {
           flex: 0 0 45%;
           background: var(--glass);
           border-radius: 16px;
-          box-shadow: 0 0px 32px 10px var(--contrast-color);
+          box-shadow: 0 0px 32px 10px var(--primary-color);
           backdrop-filter: blur(5px);
           -webkit-backdrop-filter: blur(5px);
           border: 1px solid rgba(255, 255, 255, 0.3);
@@ -624,9 +623,8 @@ body {
       }
 
       .knowledge-content {
-        //background: linear-gradient(180deg, rgba(255, 109, 21, 1) 0%, rgba(255, 0, 0, 1) 75%, rgba(143, 0, 255, 1) 100%);
         width: 100%;
-        color: var(--contrast-color);
+        color: var(--primary-color);
         scroll-margin: 50px;
         @media(max-width: 768px) {
           scroll-margin: 25px;
@@ -651,8 +649,6 @@ body {
         .knowledge-text {
           width: 100%;
           padding: 50px;
-          display: flex;
-          justify-content: space-between;
           @media (max-width: 768px){
             display: block;
             padding: 25px 50px;
@@ -697,9 +693,8 @@ body {
       }
 
       .projects-content {
-        //background: linear-gradient(180deg, rgba(143, 0, 255, 1) 0%, rgba(42, 1, 255, 1) 75%, rgba(0, 161, 255, 1) 100%);
         width: 100%;
-        color: var(--contrast-color);
+        color: var(--primary-color);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -719,15 +714,15 @@ body {
           }
         }
         .profile-pic {
-          clip-path: circle(50%);
-          width: 50%;
-          margin: 25px auto;
+          width: 100%;
+          margin: 0 auto 25px;
           position: relative;
           top: 0;
           height: 0;
-          padding-bottom: 50%;
+          padding-bottom: 60%;
 
           img {
+            border-radius: 10px;
             position: absolute;
             top: 0;
             width: 100%;
@@ -737,7 +732,7 @@ body {
           }
         }
         .projects-card {
-          width: 45%;
+          width: 50%;
           background: var(--glass);
           border-radius: 16px;
           box-shadow: 0 0px 32px 10px var(--primary-color);
@@ -745,7 +740,7 @@ body {
           -webkit-backdrop-filter: blur(5px);
           border: 1px solid rgba(255, 255, 255, 0.3);
           margin: 50px 0;
-          padding: 50px;
+          padding: 25px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -773,7 +768,7 @@ body {
 .switch-container {
   --bg: #9a9a9a;
  --coal: #171717;
- --white: var(--contrast-color);
+ --white: var(--primary-color);
  --focus: #000000;
   .form {
   display: flex;
@@ -948,10 +943,6 @@ input:checked {
       padding: 0;
     }
     .swiper-wrapper{
-      padding: 25px;
-      @media (max-width: 768px){
-        padding: 0;
-      }
       .swiper-slide{
         width: 45%;
         margin: 0 50px;
@@ -1031,15 +1022,25 @@ footer {
         a:hover i {
           transform: scale(2);
           color: var(--primary-color);
-          background: var(--primary -color);
+          background: var(--primary-color);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           transition: all 250ms ease-in;
         }
       }
     }
-    .contact {
+    .cv-contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 50px;
+      p {
+        color: var(--primary-color);
+        margin: 0 0.5rem;
+      }
+    }
+    .contact, .cv {
+      margin: 0 0.5rem;
       a{
         background-color: var(--primary-color);
         color: var(--contrast-color);

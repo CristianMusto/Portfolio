@@ -1,9 +1,31 @@
 [
     {
-        "title" : "Project",
+        "title" : "Gucci",
         "description" : "",
-        "logo" : "./assets/images/profile.jpg",
-        "link": "",
-        "shadow": "#000"
+        "logo" : "./assets/images/projects/gucci.jpeg",
+        "link": "https://www.nssmag.com/it/gucci",
+        "shadow": "#6BB786"
+    },
+
+    {
+        "title": "Archive Stories",
+        "description": "",
+        "logo": "./assets/images/projects/archiveStories.jpeg",
+        "link": "https://www.nssmag.com/it/archive-stories",
+        "shadow": "#FFFFFF"
+    },
+    {
+        "title": "Baracuta",
+        "description": "",
+        "logo": "./assets/images/projects/baracuta.jpeg",
+        "link": "https://www.nssmag.com/it/baracuta-the-alternative",
+        "shadow": "#202229"
+    },
+    {
+        "title": "Sirene",
+        "description": "",
+        "logo": "./assets/images/projects/sirene.jpeg",
+        "link": "https://www.nssgclub.com/it/sirene",
+        "shadow": "#D67994"
     }
 ]
