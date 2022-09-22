@@ -6,6 +6,7 @@
   <meta name='description' content="This is cristian musto's portfolio, he is a junior front end developer with a big passion for design.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@
               <a href='javascript: scrollToAnyTag("#main")'><h3>About me</h3></a>
             </li>
             <li class="menu-item">
-              <a href='javascript: scrollToAnyTag(".knowledge-content")'><h3>K. & E.</h3></a>
+              <a href='javascript: scrollToAnyTag(".knowledge-content")'><h3>Knowledge</h3></a>
             </li>
             <li class="menu-item logo">
               <a href='javascript: scrollTop()'><h3 data-text="CM" class="logo">CM</h3></a>
@@ -67,7 +68,7 @@
     </form>
   </div>
 
-  <section class="pre-main">
+  <section class="pre-main" data-aos="fade-down" data-aos-duration="500">
     <h1 data-text="Cristian Musto">Cristian Musto</h1>
     <p>Front-End developer</p>
     <canvas class="background-header"></canvas>
@@ -84,7 +85,7 @@
     <main id="main">
       <div class="main-container">
         <div class="about-content">
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-right" data-aos-duration="500">
             <h2>About me</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -98,7 +99,7 @@
                 recusandae alias error harum maxime adipisci amet laborum.</p>
           </div>
 
-          <div class="about-card">
+          <div class="about-card" data-aos="fade-left" data-aos-duration="500">
             <div class="profile-pic">
               <img src="./assets/images/profile.jpg" alt="profile-image">
             </div>
@@ -130,9 +131,9 @@
           </div>
         </div>
 
-        <div class="knowledge-content" id='#knowledge'>
+        <div class="knowledge-content" id='#knowledge' data-aos="fade-up" data-aos-duration="500" data-aos-offset="250">
           <div class="knowledge-text">
-            <h2>Knowledge & Experiences</h2>  
+            <h2>Knowledge</h2>  
           </div>
           <section class='swiper-section'>
             <div class="swiper-container">
@@ -143,7 +144,7 @@
           </section>
         </div>
 
-        <div class="projects-content" id="projects">
+        <div class="projects-content" id="projects" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250">
           <div class="projects-title">
             <h2 class="title">Projects</h2>
           </div>
@@ -199,8 +200,9 @@
       </div>
     </footer>
 
-    <script src='assets/script/script.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/script/particles.min.js"></script>
+    <script src='assets/script/script.js'></script>
 
   </body>
 </html>

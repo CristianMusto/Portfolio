@@ -73,6 +73,8 @@ function particles() {
 
 window.onload = function () {
 
+  AOS.init();
+
   if ($(window).outerWidth() > 768) {
     $('.header-menu').css({
       'display': 'block'
@@ -98,7 +100,7 @@ window.onload = function () {
 
   fetchCardsKE('https://cristianmusto.github.io/Portfolio/assets/json/cardsKE.json').then(res => {
     res.forEach(el => {
-      wrapper.innerHTML += "<div class='knowledge-card swiper-slide' style='box-shadow: 0 0px 20px 10px "+el.shadow+";'><div class='profile-pic'><img src=" + el.logo + "></div><h2>" + el.title + "</h2><p>" + el.description + "</p></div>"
+      wrapper.innerHTML += "<div class='knowledge-card swiper-slide' style='box-shadow: 0 0px 20px 10px " + el.shadow + ";'><div class='profile-pic'><img src=" + el.logo + " class='swiper-lazy'></div><h2>" + el.title + "</h2><p>" + el.description + "</p></div>"
     })
   })
 
@@ -112,7 +114,7 @@ window.onload = function () {
 
   fetchCardsProjects('https://cristianmusto.github.io/Portfolio/assets/json/cardsProjects.json').then(res => {
     res.forEach(el => {
-      wrapperProjects.innerHTML += "<div class='projects-card swiper-slide' style='box-shadow: 0 0px 20px 10px " + el.shadow + ";'><div class='profile-pic'><img src=" + el.logo + "></div><h2>" + el.title + "</h2><p>" + el.description + "</p><ul class='social-icons'><li><a href='" + el.link + "'><i class='fa-solid fa-arrow-right'></i></a></li></ul><p>" + el.credits + "</p></div>"
+      wrapperProjects.innerHTML += "<div class='projects-card swiper-slide' style='box-shadow: 0 0px 20px 10px " + el.shadow + ";'><div class='profile-pic'><img src=" + el.logo + " class='swiper-lazy'></div><h2>" + el.title + "</h2><p>" + el.description + "</p><ul class='social-icons'><li><a href='" + el.link + "'><i class='fa-solid fa-arrow-right'></i></a></li></ul><p>" + el.credits + "</p></div>"
     })
   })
 
@@ -136,26 +138,31 @@ window.onload = function () {
     particles();
   }
   var swiper = new Swiper(".swiper-container", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: "auto",
-          autoplay: {
-            delay: 3000,
-           disableOnInteraction: true,
-          },
-          coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 2,
-            slideShadows: true,
-          },
-          loop: false,
-          pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
+    preloadImages: true,
+    updateOnImagesReady: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    lazy: {
+      loadPrevNext: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
   });
 
   scrollTop();
