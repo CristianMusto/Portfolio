@@ -34,7 +34,7 @@
     {
         "title": "Milan fashion week",
         "description": "I created a map of the events of Milan Fashion Week with the integration of google map into the page to determine the coordinates.",
-        "logo": "./assets/images/projects/tis.jpeg",
+        "logo": "./assets/images/projects/fw.jpeg",
         "link": "https://www.nssmag.com/it/pills/30884/la-mappa-della-milan-fashion-week-men-s-ss23",
         "shadow": "#3CCC52",
         "credits": "credits: Nss magazine, Brownie"
@@ -42,7 +42,7 @@
     {
         "title": "Paris fashion week",
         "description": "I created a map of the events of Paris Fashion Week with the integration of google map into the page to determine the coordinates.",
-        "logo": "./assets/images/projects/tis.jpeg",
+        "logo": "./assets/images/projects/parisFw.jpeg",
         "link": "https://www.nssmag.com/it/pills/30017/mappa-paris-fashion-week-men-ss23",
         "shadow": "#FF70C0",
         "credits": "credits: Nss magazine, Brownie"
