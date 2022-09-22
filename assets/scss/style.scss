@@ -774,6 +774,10 @@ body {
           p {
             display: block;
             margin: 15px auto;
+            width: 75%;
+            &:nth-last-of-type(1) {
+              text-align: center;
+            }
           }
           .social-icons{
             margin: 10px 0 10px auto;

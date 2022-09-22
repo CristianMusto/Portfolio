@@ -18,7 +18,7 @@
     },
     {
         "title": "Baracuta",
-        "description": "created with the use of: html, sass, jquery and company's cms. One of the first projects created in nss by me, i learnt a lot of company's practise and the use of proprietary technology",
+        "description": "created with the use of: html, sass, jquery and company's cms. One of the first projects created in nss by me, i learnt a lot of company's practise and the use of proprietary technology (Brownie)",
         "logo": "./assets/images/projects/baracuta.png",
         "link": "https://www.nssmag.com/it/baracuta-the-alternative",
         "shadow": "#202229",
@@ -26,7 +26,7 @@
     },
     {
         "title": "Sirene",
-        "description": "created with the use of: html, sass, jquery and company's cms. The last project created in nss by me, I learnt how to create overlays to make only the content scroll",
+        "description": "created with the use of: html, sass, js and company's cms. The last project created in nss by me, I learnt how to create overlays to make only the content scroll",
         "logo": "./assets/images/projects/sirene.jpeg",
         "link": "https://www.nssgclub.com/it/sirene",
         "shadow": "#D67994",
