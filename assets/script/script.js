@@ -114,7 +114,7 @@ window.onload = function () {
 
   fetchCardsProjects('https://cristianmusto.github.io/Portfolio/assets/json/cardsProjects.json').then(res => {
     res.forEach(el => {
-      wrapperProjects.innerHTML += "<div class='projects-card swiper-slide' style='box-shadow: 0 0px 20px 10px " + el.shadow + ";'><div class='profile-pic'><a href='" + el.link + "'><img src=" + el.logo + " class='swiper-lazy'></a></div><h2>" + el.title + "</h2><p>" + el.description + "</p><ul class='social-icons'><li><a href='" + el.link + "'><i class='fa-solid fa-arrow-right'></i></a></li></ul><p>" + el.credits + "</p></div>"
+      wrapperProjects.innerHTML += "<div class='projects-card swiper-slide' style='box-shadow: 0 0px 20px 10px " + el.shadow + ";'><div class='profile-pic'><a href='" + el.link + "'><img src=" + el.logo + " class='swiper-lazy'></a></div><h2>" + el.title + "</h2><p>" + el.description + "</p><ul class='social-icons'><li><a href='" + el.link + "' target='_blank'><i class='fa-solid fa-arrow-right'></i></a></li></ul><p>" + el.credits + "</p></div>"
     })
   })
 
