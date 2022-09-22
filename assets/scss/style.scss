@@ -103,6 +103,7 @@ html, body {
         transform: scale(2);
         color: var(--primary-color);
         background: var(--primary-color);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all 250ms ease-in;
@@ -1054,6 +1055,7 @@ footer {
           transform: scale(2);
           color: var(--primary-color);
           background: var(--primary-color);
+          background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           transition: all 250ms ease-in;
