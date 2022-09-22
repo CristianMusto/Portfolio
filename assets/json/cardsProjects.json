@@ -1,10 +1,50 @@
 [
     {
-        "title": "Baracuta",
+        "title": "Baracuta - The Alternative",
         "description": "created with the use of: html, sass, jquery and company's cms. One of the first projects created in nss by me, i learnt a lot of company's practise and the use of proprietary technology (Brownie).",
         "logo": "./assets/images/projects/baracuta.png",
         "link": "https://www.nssmag.com/it/baracuta-the-alternative",
         "shadow": "#202229",
+        "credits": "credits: Nss magazine, Brownie"
+    },
+    {
+        "title": "Mqbmbq",
+        "description": "created with the use of: html, sass, js and company's cms. I made the restyle of the page.",
+        "logo": "./assets/images/projects/mqbmbq.png",
+        "link": "https://mqbmbq.com/",
+        "shadow": "#AAC8B0",
+        "credits": "credits: Brownie"
+    },
+    {
+        "title": "More than: Matteo Pessina",
+        "description": "created with the use of: company's cms.",
+        "logo": "./assets/images/projects/pessina.png",
+        "link": "https://www.nssmag.com/it/sports/30274/more-than-matteo-pessina",
+        "shadow": "#EEE6D6",
+        "credits": "credits: Nss sports, Brownie"
+    },
+    {
+        "title": "The italian streetwear",
+        "description": "I created an articles category that mark articles as part of the section.",
+        "logo": "./assets/images/projects/tis.jpeg",
+        "link": "https://www.nssmag.com/it/tag/the-italian-streetwear",
+        "shadow": "#F66A36",
+        "credits": "credits: Nss magazine, Brownie"
+    },
+    {
+        "title": "Milan fashion week",
+        "description": "I created a map of the events of Milan Fashion Week with the integration of google map into the page to determine the coordinates.",
+        "logo": "./assets/images/projects/tis.jpeg",
+        "link": "https://www.nssmag.com/it/pills/30884/la-mappa-della-milan-fashion-week-men-s-ss23",
+        "shadow": "#3CCC52",
+        "credits": "credits: Nss magazine, Brownie"
+    },
+    {
+        "title": "Paris fashion week",
+        "description": "I created a map of the events of Paris Fashion Week with the integration of google map into the page to determine the coordinates.",
+        "logo": "./assets/images/projects/tis.jpeg",
+        "link": "https://www.nssmag.com/it/pills/30017/mappa-paris-fashion-week-men-ss23",
+        "shadow": "#FF70C0",
         "credits": "credits: Nss magazine, Brownie"
     },
     {
@@ -30,5 +70,5 @@
         "link": "https://www.nssgclub.com/it/sirene",
         "shadow": "#D67994",
         "credits": "credits: Nss g-club, Brownie"
-    }
+    },
 ]

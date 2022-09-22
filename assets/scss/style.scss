@@ -46,7 +46,6 @@ html, body {
     @include fluid-type(20, 40, 300, 1920);
     font-family: 'Syne', sans-serif;
     font-weight: 700;
-
   }
   p{
     text-align: justify;
@@ -54,7 +53,7 @@ html, body {
     font-family: 'Syne', sans-serif;
     font-weight: 400;
     @media (max-width: 768px){
-      text-align: left;
+      text-align: justify;
     }
 
   }
@@ -584,6 +583,9 @@ body {
           h2{
             text-align: left;
             margin: 10px 0;
+            @media (max-width: 768px) {
+              text-align: center;
+            }
           }
           p {
             display: block;
@@ -591,6 +593,9 @@ body {
           }
 
           .epicode {
+            @media (max-width: 768px) {
+              text-align: center;
+            }
             a {
               background-color: var(--primary-color);
               color: var(--contrast-color);
@@ -777,6 +782,10 @@ body {
             width: 75%;
             &:nth-last-of-type(1) {
               text-align: center;
+            }
+
+            @media (max-width: 768px) {
+              width: 100%;
             }
           }
           .social-icons{
