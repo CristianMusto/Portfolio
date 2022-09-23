@@ -16,7 +16,7 @@
 
     {
         "title": "SASS",
-        "description": "learned in epicode and improved in nss",
+        "description": "learnt in epicode and improved in nss",
         "logo": "./assets/images/logos/sass-logo.jpg",
         "shadow": "#CD6698"
     },
@@ -30,21 +30,42 @@
 
     {
         "title": "JQUERY",
-        "description": "learned in epicode and improved in nss",
+        "description": "learnt in epicode and improved in nss",
         "logo": "./assets/images/logos/jquery-logo.jpg",
         "shadow": "#3558A8"
     },
 
     {
+        "title": "GIT",
+        "description": "learnt in epicode and improved in nss",
+        "logo": "./assets/images/logos/git.png",
+        "shadow": "#000000"
+    },
+
+    {
+        "title": "SMARTY",
+        "description": "learnt in nss",
+        "logo": "./assets/images/logos/smarty.png",
+        "shadow": "#F0C040"
+    },
+
+    {
         "title": "ANGULAR",
-        "description": "learned in epicode",
+        "description": "learnt in epicode",
         "logo": "./assets/images/logos/angular-logo.jpg",
         "shadow": "#2371D0"
     },
 
     {
+        "title": "VUE JS",
+        "description": "learnt in nss",
+        "logo": "./assets/images/logos/vue.png",
+        "shadow": "#30B982"
+    },
+
+    {
         "title": "PHP",
-        "description": "learned in nss",
+        "description": "learnt in nss",
         "logo": "./assets/images/logos/php-logo-hd.jpg",
         "shadow": "#5F82BA"
     }
